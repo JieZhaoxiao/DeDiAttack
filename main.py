@@ -33,7 +33,7 @@ parser.add_argument('--is_hard_mask', default=False, type=bool,
 
 parser.add_argument('--diffusion_steps', default=20, type=int, help='Total DDIM sampling steps')
 parser.add_argument('--start_step', default=15, type=int, help='Which DDIM step to start the attack')
-parser.add_argument('--iterations', default=30, type=int, help='Iterations of optimizing the adv_image')
+parser.add_argument('--iterations', default=20, type=int, help='Iterations of optimizing the adv_image')
 parser.add_argument('--res', default=224, type=int, help='Input image resized resolution')
 parser.add_argument('--model_name', default="resnet", type=str,
                     help='The surrogate model from which the adversarial examples are crafted')
